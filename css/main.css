@@ -3,18 +3,21 @@ html, body {
 	height:100%;
 	padding:0;
 	margin:0;
-	background:#808080;
 }
-#background, #backgroundHide, #container {
-	position:fixed;
+body {
+	background:#194DBC;
+	color:white;
+	font-family:'Verdana', 'Arial', sans-serif;
+}
+a:link, a:visited {
+	color:white;
+	color:inherit;
+}
+a:hover {
+	color:#FFAB09;
+}
+#container {
 	width:100%;
 	height:100%;
-}
-#backgroundHide {
-	background:#808080;
-}
-#innerContainer {
-	width:1000px;
-	min-height:500px;
-	margin:0 auto;
+	overflow:hidden;
 }
