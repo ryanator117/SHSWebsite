@@ -1,3 +1,5 @@
+/*Link to color scheme: http://colorschemedesigner.com/#3K61DuUBFw0w0 */
+/*Resets and containers*/
 html, body {
 	width:100%;
 	height:100%;
@@ -17,7 +19,19 @@ a:hover {
 	color:#FFAB09;
 }
 #container {
-	width:100%;
-	height:100%;
-	overflow:hidden;
+	width:1000px;
+	margin:0 auto;
 }
+/*Header*/
+#header {
+
+}
+/*Main*/
+#main {
+
+}
+/*Footer*/
+#footer {
+
+}
+
