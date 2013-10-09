@@ -7,7 +7,7 @@ html, body {
 	margin:0;
 }
 body {
-	background:#194DBC;
+	background:#093AA1;
 	color:white;
 	font-family:'Verdana', 'Arial', sans-serif;
 }
@@ -24,7 +24,24 @@ a:hover {
 }
 /*Header*/
 #header {
-
+	height:200px;
+	width:1000px;
+	overflow:hidden;
+	border-bottom-left-radius:16px;
+	border-bottom-right-radius:16px;
+	background-color: #7496DD;
+}
+#navigation {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	border-bottom-left-radius:16px;
+	border-bottom-right-radius:16px;
+	width:1000px;
+	height:32px;
+	margin-top:168px;
+	background-color:#2E5EC5;
+	padding:5px;
 }
 /*Main*/
 #main {
@@ -32,6 +49,19 @@ a:hover {
 }
 /*Footer*/
 #footer {
-
+	width:1000px;
+	top:100%;
+	position:fixed;
+	left:50%;
+	margin-top:-32px;
+	height:32px;
+	background-color:#2E5EC5;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	margin-left:-500px;
+	padding:5px;
+}
+#footer div {
+	text-align:center;
 }
 
