@@ -101,6 +101,16 @@ a:hover {
 	padding:8px;
 	display:none;
 }
+#searchDropdown {
+	background-color:white;
+	display:none;
+	position:relative;
+	top:200px;
+	width:256px;
+	left:1000px;
+	margin-left:-272px;
+	height:256px;
+}
 /*Main*/
 #main {	
 
