@@ -26,8 +26,6 @@ $(document).ready(function () {
 			openSearch();
 		}else if (id == 'CSB') {
 			closeSearch();
-		}else{
-			console.log('Search error');
 		}
 	});
 
@@ -49,4 +47,25 @@ function openSearch() {
 	});
 	$('#search').html('<input type="text" id="searchBox" /><img id="CSB" src="images/closeSearchButton.png"/>	');
 	$('#CSB').css('display', 'inline');
+
+	//Initilizes event handelers after the textbox is loaded into the DOM
+
+	$('#searchBox').keyup(function () {
+		search($('#searchBox').val());
+	});
+
+	$('#searchBox').blur(function () {
+		$('#searchDropdown').slideUp(200);
+	});
+	$('#searchBox').focus(function () {
+		search($('#searchBox').val());
+	});
+}
+
+function search(text) {
+	if (text == '') {
+		$('#searchDropdown').slideUp(200);
+	}else{
+		$('#searchDropdown').slideDown(200);
+	}
 }
