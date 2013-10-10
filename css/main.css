@@ -7,7 +7,7 @@ html, body {
 	margin:0;
 }
 body {
-	background:#093AA1;
+	background:#194DBC;
 	color:white;
 	font-family:'Verdana', 'Arial', sans-serif;
 }
@@ -25,46 +25,99 @@ a:hover {
 /*Header*/
 #header {
 	height:200px;
-	width:1000px;
-	overflow:hidden;
-	border-bottom-left-radius:16px;
+	background-color:#4D7CDD;
 	border-bottom-right-radius:16px;
-	background-color: #7496DD;
+	border-bottom-left-radius:16px;
 }
 #navigation {
 	padding:0;
 	margin:0;
 	list-style-type:none;
-	border-bottom-left-radius:16px;
-	border-bottom-right-radius:16px;
-	width:1000px;
+	background-color:#082D7A;
 	height:32px;
-	margin-top:168px;
-	background-color:#2E5EC5;
+	position:absolute;
+	top:168px;
+	width:1000px;
+	border-bottom-right-radius:16px;
+	border-bottom-left-radius:16px;
+	overflow:none;
+}
+#navigation li:first-of-type {
+	margin-left:16px;
+}
+#navigation li {
+	float:left;
+	overflow:none;
+}
+#navigation li a {
+	display:inline-block;
+	padding:7px 16px;
+	text-decoration:none;
+}
+#navigation li a:hover {
+	color:#082D7A;
+	background-color:white;
+	box-shadow:inset 0 0 16px #555;
+}
+#navigation #search {
+	float:right;
+	margin-right:16px;
+	height:32px;	
+	overflow:hidden;
+}
+#navigation #search a {
+	box-shadow:none;
+	padding:0;
+}
+#navigation #search a img {
+	box-shadow:none;
 	padding:5px;
+	margin:0;
+	width:22px;
+	height:22px;
+}
+#navigation #search a:hover {
+	box-shadow:inset 0 0 16px #555;
+}
+#navigation #searchBox {
+	height:32px;
+	width:256px;
+	box-shadow:inset 0 0 16px #555;
+	border:none;
+	background-image:url('../images/searchIcon.png');
+	background-position:5px 5px;
+	background-repeat:no-repeat;
+	color:#082D7A;
+	padding-left:32px;
+	font-size:14px;
+}
+#navigation #CSB {
+	position:absolute;
+	top:0px;
+	right:16px;
+	width:16px;
+	height:16px;
+	cursor:pointer;
+	padding:8px;
+	display:none;
 }
 /*Main*/
-#main {
+#main {	
 
 }
 /*Footer*/
 #footer {
 	width:1000px;
-	top:100%;
-	position:fixed;
-	left:50%;
-	margin-top:-32px;
+	border-top-right-radius:16px;
+	border-top-left-radius:16px;
+	background-color:#082D7A;
 	height:32px;
-	background-color:#2E5EC5;
-	border-top-left-radius: 16px;
-	border-top-right-radius: 16px;
-	margin-left:-500px;
-	padding:5px;
+	position:absolute;
+	top:100%;
+	margin-top:-32px;
 }
 #footer div {
 	text-align:center;
+	padding:7px;
 }
 
-#email {
-	text-decoration: underline;
-}
