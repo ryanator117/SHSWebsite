@@ -29,6 +29,20 @@ $(document).ready(function () {
 		}
 	});
 
+	$('#search').mouseover(function (e) {
+		id = e.target.id;
+		if (id == 'search_open') {
+			$('#search_open').attr("src", "images/openSearchButtonDark.png");
+		}
+	});
+
+	$('#search').mouseout(function (e) {
+		id = e.target.id;
+		if (id == 'search_open') {
+			$('#search_open').attr("src", "images/openSearchButtonLight.png");
+		}
+	});
+
 });
 
 var id = null;
@@ -38,16 +52,15 @@ function closeSearch() {
 		'width' : '32px'
 	});
 	// Should replace anchor tag with just img tag and use CSS to set cursor type
-	$('#search').html('<a href="#"><img src="images/openSearchButton.png" id="search_close" /></a><img id="search_close" src="images/closeSearchButton.png"/>');
+	$('#search').html('<a href="#"><img src="images/openSearchButtonLight.png" id="search_open" /></a><img id="search_close" src="images/closeSearchButton.png"/>');
 }
 function openSearch() {
-	openSearch.called = true;
 	$('#search').animate({
 		'width' : '256px'
 	}, 400, function () {
 		$('#searchBox').focus();
 	});
-	$('#search').html('<input type="text" id="searchBox" /><img id="search_close" src="images/closeSearchButton.png"/>	');
+	$('#search').html('<input type="text" id="searchBox" /><img id="search_close" src="images/closeSearchButton.png"/>');
 	$('#search_close').css('display', 'inline');
 
 	//Initilizes event handelers after the textbox is loaded into the DOM

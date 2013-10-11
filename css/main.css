@@ -84,12 +84,15 @@ a:hover {
 	width:256px;
 	box-shadow:inset 0 0 16px #555;
 	border:none;
-	background-image:url('../images/searchIcon.png');
+	background-image:url('../images/openSearchButtonDark.png');
 	background-position:5px 5px;
 	background-repeat:no-repeat;
 	color:#082D7A;
 	padding-left:32px;
 	font-size:14px;
+}
+#search_open {
+	
 }
 #navigation #search_close {
 	position:absolute;
