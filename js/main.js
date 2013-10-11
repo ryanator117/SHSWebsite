@@ -37,7 +37,7 @@ function closeSearch() {
 	$('#search').animate({
 		'width' : '32px'
 	});
-	$('#search').html('<a href="#"><img src="images/searchIcon.png" id="OSB" /></a><img id="CSB" src="images/closeSearchButton.png"/>');
+	$('#search').html('<a href="#"><img src="images/searchIcon.png" id="search_close" /></a><img id="search_close" src="images/closeSearchButton.png"/>');
 }
 function openSearch() {
 	openSearch.called = true;
@@ -46,8 +46,8 @@ function openSearch() {
 	}, 400, function () {
 		$('#searchBox').focus();
 	});
-	$('#search').html('<input type="text" id="searchBox" /><img id="CSB" src="images/closeSearchButton.png"/>	');
-	$('#CSB').css('display', 'inline');
+	$('#search').html('<input type="text" id="searchBox" /><img id="search_close" src="images/closeSearchButton.png"/>	');
+	$('#search_close').css('display', 'inline');
 
 	//Initilizes event handelers after the textbox is loaded into the DOM
 
