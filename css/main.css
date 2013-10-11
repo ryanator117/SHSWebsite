@@ -84,7 +84,7 @@ a:hover {
 	width:256px;
 	box-shadow:inset 0 0 16px #555;
 	border:none;
-	background-image:url('../images/searchIcon.png');
+	background-image:url('../images/searchIcon.gif');
 	background-position:5px 5px;
 	background-repeat:no-repeat;
 	color:#082D7A;
@@ -130,4 +130,3 @@ a:hover {
 	text-align:center;
 	padding:7px;
 }
-

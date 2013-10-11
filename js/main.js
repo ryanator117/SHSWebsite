@@ -40,6 +40,7 @@ function closeSearch() {
 	$('#search').html('<a href="#"><img src="images/searchIcon.png" id="OSB" /></a><img id="CSB" src="images/closeSearchButton.png"/>');
 }
 function openSearch() {
+	openSearch.called = true;
 	$('#search').animate({
 		'width' : '256px'
 	}, 400, function () {
