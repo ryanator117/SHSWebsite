@@ -22,9 +22,9 @@ $(document).ready(function () {
 		//Takes the id of the clicked element to decide if
 		//the bar should be opened or closed
 		id = e.target.id;
-		if (id == 'OSB') {
+		if (id == 'search_open') {
 			openSearch();
-		}else if (id == 'CSB') {
+		}else if (id == 'search_close') {
 			closeSearch();
 		}
 	});
