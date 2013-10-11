@@ -6,14 +6,14 @@ $(document).ready(function () {
 		// need to change the href attribute of the email_link and
 		// change the innerHTML of the email span to the email
 		$("#email").html("WebDesignSkyview@gmail.com");
-		$("#email_link").attr("href", "mailto:WebDesignSkyview@gmail.com?subject=Website Feedback");
+		$("#email").attr("href", "mailto:WebDesignSkyview@gmail.com?subject=Website Feedback");
 	});
 
 	$("#email").mouseout(function() { 
 		// need to change the href attribute of the email_link and
 		// change the innerHTML of the email span to the placeholder
 		$("#email").html("email address");
-		$("#email_link").attr("href", "#");
+		$("#email").attr("href", "#");
 	});
 
 	// Searchbox opening and closing
