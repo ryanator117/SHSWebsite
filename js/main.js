@@ -37,7 +37,6 @@ function closeSearch() {
 	$('#search').animate({
 		'width' : '32px'
 	});
-	$('#search').html('<a href="#"><img src="images/searchIcon.png" id="search_close" /></a><img id="search_close" src="images/closeSearchButton.png"/>');
 	// Should replace anchor tag with just img tag and use CSS to set cursor type
 	$('#search').html('<a href="#"><img src="images/openSearchButton.png" id="search_close" /></a><img id="search_close" src="images/closeSearchButton.png"/>');
 }
