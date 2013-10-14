@@ -18,63 +18,40 @@ $(document).ready(function () {
 
 	// Searchbox opening and closing
 
-	$('#search').click(function (e) {
-		//Takes the id of the clicked element to decide if
-		//the bar should be opened or closed
-		id = e.target.id;
-		if (id == 'search_open') {
+	$('#searchBox').click(function (e) {
+		if ($('#searchBox').width() == 0) {
 			openSearch();
-		}else if (id == 'search_close') {
-			closeSearch();
 		}
 	});
-
-	$('#search').mouseover(function (e) {
-		id = e.target.id;
-		if (id == 'search_open') {
-			$('#search_open').attr("src", "images/openSearchButtonDark.png");
-		}
+	
+	$('#closeSearchBox').click(function (e) {
+		closeSearch();
 	});
-
-	$('#search').mouseout(function (e) {
-		id = e.target.id;
-		if (id == 'search_open') {
-			$('#search_open').attr("src", "images/openSearchButtonLight.png");
-		}
-	});
-
 });
 
-var id = null;
-
 function closeSearch() {
-	$('#search').animate({
-		'width' : '32px'
+	$('#searchBox').animate({
+		'width' : '0px'
 	});
-	// Should replace anchor tag with just img tag and use CSS to set cursor type
-	$('#search').html('<a href="#"><img src="images/openSearchButtonLight.png" id="search_open" /></a><img id="search_close" src="images/closeSearchButton.png"/>');
+	$('#searchBox').css({
+		'box-shadow' : 'none',
+		'background-color' : '#082D7A',
+		'background-image' : 'url(\'images/openSearchButtonLight.png\')',
+		'cursor' : 'pointer'
+	});
+	$('#closeSearchBox').hide();
 }
 function openSearch() {
-	$('#search').animate({
-		'width' : '256px'
-	}, 400, function () {
-		$('#searchBox').focus();
+	$('#searchBox').animate({
+		'width' : '224px'
 	});
-	$('#search').html('<input type="text" id="searchBox" /><img id="search_close" src="images/closeSearchButton.png"/>');
-	$('#search_close').css('display', 'inline');
-
-	//Initilizes event handelers after the textbox is loaded into the DOM
-
-	$('#searchBox').keyup(function () {
-		search($('#searchBox').val());
+	$('#searchBox').css({
+		'box-shadow' : 'inset 0 0 16px #555',
+		'background-color' : 'white',
+		'background-image' : 'url(\'images/openSearchButtonDark.png\')',
+		'cursor' : 'text'
 	});
-
-	$('#searchBox').blur(function () {
-		$('#searchDropdown').slideUp(200);
-	});
-	$('#searchBox').focus(function () {
-		search($('#searchBox').val());
-	});
+	$('#closeSearchBox').show();
 }
 
 function search(text) {
