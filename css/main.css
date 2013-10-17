@@ -85,6 +85,7 @@
 		height:32px;
 		width:0px;
 		/*background-color:#082D7A;   WIP set color of text box to something else*/
+		background-color: rgb(8, 45, 122);
 		border:none;
 		cursor:pointer;
 		background-image:url('../images/openSearchButtonLight.png');
