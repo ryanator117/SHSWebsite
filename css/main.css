@@ -26,8 +26,8 @@
 	#header {
 		height:200px;
 		background-color:#4D7CDD;
-		border-bottom-right-radius:16px;
-		border-bottom-left-radius:16px;
+		border-bottom-right-radius:5px;
+		border-bottom-left-radius:5px;
 	}
 	#navigation {
 		padding:0;
@@ -38,8 +38,8 @@
 		position:absolute;
 		top:168px;
 		width:1000px;
-		border-bottom-right-radius:16px;
-		border-bottom-left-radius:16px;
+		border-bottom-right-radius:5px;
+		border-bottom-left-radius:5px;
 		overflow:none;
 	}
 	#navigation li:first-of-type {
@@ -119,8 +119,8 @@
 	/*Footer*/
 	#footer {
 		width:1000px;
-		border-top-right-radius:16px;
-		border-top-left-radius:16px;
+/*		border-top-right-radius:5px;
+		border-top-left-radius:5px;*/
 		background-color:#082D7A;
 		height:32px;
 		position:absolute;
