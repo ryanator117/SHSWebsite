@@ -119,8 +119,8 @@
 	/*Footer*/
 	#footer {
 		width:1000px;
-/*		border-top-right-radius:5px;
-		border-top-left-radius:5px;*/
+		border-top-right-radius:5px;
+		border-top-left-radius:5px;
 		background-color:#082D7A;
 		height:32px;
 		position:absolute;
