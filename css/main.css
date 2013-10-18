@@ -6,7 +6,7 @@ html, body {
 }
 
 #container {
-	width:1024px;
+	width:1000px;
 	margin:0 auto;
 }
 
@@ -25,8 +25,19 @@ nav {
 }
 
 section {
-	min-height:500px;
+	height:500px;
+}
+section .left {
+	float:left;
+	width:250px;
 	background:#D2D2D2;
+	height:100%;
+}
+section .right {
+	float:left;
+	width:750px;
+	background:#555555;
+	height:100%;
 }
 
 footer {
