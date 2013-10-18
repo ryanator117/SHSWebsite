@@ -1,0 +1,14 @@
+nav {
+	height:32px;
+	background:#2D2D2D;
+	width:100%;
+}
+
+nav a {
+	display:inline-block;
+	font-size:22px;
+	line-height:22px;
+	text-decoration:none;
+	padding:5px 0 5px 20px;
+	color:white;
+}

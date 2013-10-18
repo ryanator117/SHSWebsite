@@ -1,0 +1,29 @@
+@import url("header.css");
+@import url("nav.css");
+@import url("section.css");
+@import url("footer.css");
+
+html, body {
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	font-family:'Verdana', 'Arial', sans-serif;
+}
+
+body {
+	background:#0F48A3;
+	box-shadow:inset 0 0 50px 25px #0A3C8C;
+}
+
+#container {
+	width:1000px;
+	margin:0 auto;
+}
+
+
+
+
+
+
+
