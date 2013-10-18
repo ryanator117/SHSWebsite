@@ -2,8 +2,4 @@ footer {
 	height:32px;
 	background:#2D2D2D;
 	width:100%;
-	a:link {color:#FFFFFF;}      /* unvisited link */
-	a:visited {color:#00FFFF;}  /* visited link */
-	a:hover {color:#C0C0C0;}  /* mouse over link */
-	a:active {color:#C0C0C0;}  /* selected link */ 
 }
