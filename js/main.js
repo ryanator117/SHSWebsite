@@ -4,7 +4,9 @@ $(document).ready(function () {
 		size();
 	});
 	
-	$('nav a').click(function () {
+	$('section .left, section .right, nav, footer, body').addClass('shadow');
+	
+	$('nav a:not(.noLink)').click(function () {
 		openLink($(this).attr('href'));
 	});
 });
@@ -32,7 +34,7 @@ function openLink(href) {
 	
 	$('#navBG').fadeIn(400);
 
-	$('nav a').click(function () {
+	$('nav a:not(.noLink)').click(function () {
 		openLink($(this).attr('href'));
 	});
 }
