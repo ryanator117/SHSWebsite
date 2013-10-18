@@ -6,7 +6,7 @@ $(document).ready(function () {
 	
 	$('nav a').click(function () {
 		openLink($(this).attr('href'));
-	});	
+	});
 });
 
 function size() {
@@ -29,5 +29,10 @@ function openLink(href) {
 	$('#navBGnav').html($('nav').html());
 	href = href.substring(1);
 	$('#navBG h1').html(href);
+	
 	$('#navBG').fadeIn(400);
+
+	$('nav a').click(function () {
+		openLink($(this).attr('href'));
+	});
 }
