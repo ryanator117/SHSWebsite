@@ -6,34 +6,31 @@ nav {
 
 nav a {
 	display:inline-block;
+	padding:5px 16px;
 	font-size:22px;
 	line-height:22px;
-	text-decoration:none;
 	color:white;
+	text-decoration:none;
+	text-align:center;
 	float:left;
 }
-
-nav table {
-	width:100%;
-	height:32px;
+nav a:first-of-type {
+	margin-left:0;
 }
-nav table tr, nav table tr td {
-	height:100%;
-}
-nav table tr td a {
-	display:block;
-	width:100%;
-	height:100%;
-	text-align:center;
-	padding:5px 0;
-}
-nav table, nav table tr, nav table tr td {
-	padding:0;
-	margin:0;
-	border-spacing:0;
-}
-
 nav a:hover {
-	color: #2D2D2D;
-	background:white;
+	background-color:white;
+	color:#2D2D2D;
+}
+#navBG {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(45, 45, 45, 0.7);
+	display:none;
+}
+#navBG h1 {
+	color:white;
+	text-align:center;
 }
