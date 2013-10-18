@@ -118,17 +118,55 @@
 	}
 	/*Main*/
 	#main {	
-
+		height:720px;
+		background-color:#ffcfff;
+		margin-top:5px;
+		text-align: left;
+		display: table-cell; /*Now I can center things, w00t*/
+		width:1000px;
+		border-bottom-right-radius:5px; /*Mmmm Round...*/
+		border-bottom-left-radius:5px;
+	}
+	#left {
+		background-color:#000000;	/*Obviously temp*/
+		display: inline-block; /*IDK what this even does*/
+		width: 200px;
+		height: 690px;
+		text-align: left;	
+		margin-bottom:35px;
+		margin-top:10px;
+		margin-left:5px;
+		margin-right:5px;
+		float:left;
+		border-bottom-right-radius:5px;
+		border-bottom-left-radius:5px;
+		border-top-right-radius:5px;
+		border-top-left-radius:5px;
+	}
+	#right {
+		background-color:#000000;	
+		display: inline-block;
+		width: 780px;
+		height: 690px;
+		text-align: left;	
+		margin-bottom:35px;
+		margin-top:10px;
+		margin-right:5px;
+		float:right;
+		border-bottom-right-radius:5px;
+		border-bottom-left-radius:5px;
+		border-top-right-radius:5px;
+		border-top-left-radius:5px;
 	}
 	/*Footer*/
 	#footer {
 		width:1000px;
+		float:bottom;
 		border-top-right-radius:5px;
 		border-top-left-radius:5px;
 		background-color:#082D7A;
 		height:32px;
 		position:absolute;
-		top:100%;
 		margin-top:-32px;
 	}
 	#footer div {
