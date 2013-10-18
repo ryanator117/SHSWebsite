@@ -1,3 +1,8 @@
+@import url("header.css");
+@import url("nav.css");
+@import url("section.css");
+@import url("footer.css");
+
 html, body {
 	width:100%;
 	height:100%;
@@ -15,37 +20,9 @@ body {
 	margin:0 auto;
 }
 
-header, nav, section, footer {
-	width:100%;
-}
 
-header {
-	height:168px;
-	background:#666666;
-}
 
-nav {
-	height:32px;
-	background:#2D2D2D;
-}
 
-section {
-	height:500px;
-}
-section .left {
-	float:left;
-	width:250px;
-	background:#D2D2D2;
-	height:100%;
-}
-section .right {
-	float:left;
-	width:750px;
-	background:#555555;
-	height:100%;
-}
 
-footer {
-	height:32px;
-	background:#2D2D2D;
-}
+
+
