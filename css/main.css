@@ -1,10 +1,8 @@
-
 /*Color Scheme - http://colorschemedesigner.com/#3P51BYIpUk.w0 */
 @import url("header.css");
 @import url("nav.css");
 @import url("section.css");
 @import url("footer.css");
-@import url("FeedEk.css");
 
 html, body {
 	width:100%;
