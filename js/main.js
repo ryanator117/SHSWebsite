@@ -4,8 +4,6 @@ $(document).ready(function () {
 		size();
 	});
 	
-	$('section .left, section .right, nav, footer, body').addClass('shadow');
-	
 	$('nav a:not(.noLink)').click(function () {
 		openLink($(this).attr('href'));
 	});

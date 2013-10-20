@@ -7,16 +7,12 @@ section .left {
 	width:250px;
 	background:#D2D2D2;
 	height:100%;
-	box-shadow:inset 0 0 128px 64px #D2D2D2;
+	box-shadow:inset 0 0 128px 16px #2D2D2D;
 }
 section .right {
 	float:left;
 	width:750px;
 	background:#555555;
 	height:100%;
-	box-shadow:inset 0 0 128px 64px #555555;
-}
-section .shadow {
 	box-shadow:inset 0 0 128px 16px #2D2D2D;
-	transition: box-shadow 1.5s ease-in-out;
 }

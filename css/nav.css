@@ -2,12 +2,7 @@ nav {
 	height:32px;
 	background:#2D2D2D;
 	width:100%;
-	box-shadow:inset 0 0 64px 15px #2D2D2D;
-}
-
-nav.shadow {
 	box-shadow:inset 0 0 16px 4px black;
-	transition:box-shadow 3s ease-in-out;
 }
 
 nav a {
@@ -35,21 +30,22 @@ nav a:hover {
 	height:100%;
 	background-color:rgba(0, 0, 0, 0.8);
 	display:none;
-	box-shadow:inset 0 0 30px 10px white;
 }
 #navBG h1 {
 	color:white;
 	text-align:center;
-	height:84px;
-	margin:0;
-	padding:26px 0;
-	height:32px;
+	height:24px;
+	margin:0 0 0 -500px;
+	padding:5px 0;
 	background-color:#2D2D2D;
-	box-shadow:inset 0 0 64px 16px black, 0 0 30px 10px white;
 	width:1000px;
 	left:50%;
-	margin-left:-500px;
+	font-size:22px;
+	line-height:22px;
 	position:fixed;
+	font-weight:normal;
+	top:168px;
+	box-shadow:inset 0 0 16px 4px black;
 }
 #navBGnav {
 	position:fixed;
@@ -59,5 +55,4 @@ nav a:hover {
 	height:32px;
 	width:1000px;
 	background-color:rgba(30, 30, 30, 0.9);
-	box-shadow:0 0 30px 10px white;
 }
