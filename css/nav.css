@@ -1,8 +1,9 @@
 nav {
 	height:32px;
-	background:#2D2D2D;
+	background:#666666 url('../images/headerBG.jpg');
 	width:100%;
-	box-shadow:inset 0 0 16px 4px black;
+	border-top:2px solid white;
+	border-bottom:2px solid white;
 }
 
 nav a {
@@ -14,45 +15,11 @@ nav a {
 	text-decoration:none;
 	text-align:center;
 	float:left;
+	background:url('../images/trans.png');
 }
 nav a:first-of-type {
 	margin-left:0;
 }
 nav a:hover {
-	background-color:white;
-	color:#2D2D2D;
-}
-#navBG {
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	background-color:rgba(0, 0, 0, 0.8);
-	display:none;
-}
-#navBG h1 {
-	color:white;
-	text-align:center;
-	height:24px;
-	margin:0 0 0 -500px;
-	padding:5px 0;
-	background-color:#2D2D2D;
-	width:1000px;
-	left:50%;
-	font-size:22px;
-	line-height:22px;
-	position:fixed;
-	font-weight:normal;
-	top:168px;
-	box-shadow:inset 0 0 16px 4px black;
-}
-#navBGnav {
-	position:fixed;
-	bottom:0;
-	left:50%;
-	margin-left:-500px;
-	height:32px;
-	width:1000px;
-	background-color:rgba(30, 30, 30, 0.9);
+	background:url('../images/transDark.png');
 }
