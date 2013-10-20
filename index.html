@@ -11,6 +11,15 @@
 	
 	<script src="js/jquery.js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/FeedEk.js"></script>
+	<script type="text/javascript" >
+		$(document).ready(function () {  
+			$('#divRss').FeedEk({
+		    	FeedUrl: 'https://dl.dropboxusercontent.com/u/41127528/News.xml',
+		    	MaxCount: 5
+			});
+		});
+	</script>
 </head>
 <body>
 	<div id="container">
@@ -30,7 +39,7 @@
 			
 			</article>
 			<article class="right">
-			
+			<div id="divRss">
 			</article>
 			<aside>
 			
