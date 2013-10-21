@@ -6,14 +6,14 @@ section .left {
 	float:left;
 	width:250px;
 	height:100%;
-	background:rgba(0, 0, 0, 0.7);
+	background:rgba(0, 0, 0, 0.8);
 	border-top-left-radius:16px;
 }
 section .right {
 	float:left;
 	width:750px;
 	height:100%;
-	background:rgba(0, 0, 0, 0.7);
+	background:rgba(0, 0, 0, 0.8);
 	box-shadow:inset 0 0 200px 25px black;
 	border-top-right-radius:16px;
 }
@@ -21,7 +21,7 @@ section .fullWidth {
 	float:left;
 	width:1000px;
 	height:100%;
-	background:rgba(0, 0, 0, 0.7);
+	background:rgba(0, 0, 0, 0.8);
 	box-shadow:inset 0 0 200px 25px black;
 	border-top-left-radius:16px;
 	border-top-right-radius:16px;
