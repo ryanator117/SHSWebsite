@@ -41,6 +41,7 @@ nav #search {
 	width:0;
 	height:22px;
 	padding:5px 0 5px 32px;
+	background:url(../images/transparent.0.2.png);
 	background:rgba(0, 0, 0, 0.2) url(../images/search.png) no-repeat 5px 5px;
 	border:none;
 	color:white;
@@ -49,10 +50,12 @@ nav #search {
 }
 nav #search:focus {
 	width:256px;
+	background-color:black;
 	background-color:rgba(0, 0, 0, 0.8);
 	cursor:text !important;
 }
 nav #search:hover {
+	background-color:black;
 	background-color:rgba(0, 0, 0, 0.8);
 	cursor:pointer;
 }
