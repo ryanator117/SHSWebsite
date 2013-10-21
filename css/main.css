@@ -13,7 +13,9 @@ html, body {
 }
 
 body {
-	background:#01218C;
+	background:#01218C url('../images/lightning.png');
+	background-position:top center;
+	background-repeat:no-repeat;
 	box-shadow:inset 0 0 100px 25px #011A6C;
 }
 

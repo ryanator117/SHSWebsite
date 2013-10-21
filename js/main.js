@@ -11,7 +11,6 @@ function size() {
 
 //Calendar
 var curDate = new Date();
-console.log(curDate);
 var curYear = curDate.getFullYear();
 var curMonth = curDate.getMonth();
 var curDay = curDate.getDate();
