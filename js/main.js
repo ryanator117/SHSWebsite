@@ -7,17 +7,26 @@ $(document).ready(function () {
 
 $(function () {
 	$(document).easteregg({
-		sequence : [38, 38, 40, 40, 37, 39, 37, 39, 66, 65],
+		sequence : [38, 40],
 		callback : function () {
-			$('*').each(function () {
-				var letters = '0123456789ABCDEF'.split('');
-				var color = '#';
-				for (var i = 0; i < 6; i++ ) {
-					color += letters[Math.round(Math.random() * 15)];
+				$(function () {
+				
+				var all = $('*');
+				all.css('transition', 'background 0.2s ease-in-out');
+				
+				setInterval(function () {
+					all.each(function () {
+						var letters = '0123456789ABCDEF'.split('');
+						var color = '#';
+						for (var i = 0; i < 6; i++ ) {
+							color += letters[Math.round(Math.random() * 15)];
+						}
+						$(this).css('background-color', color);
+					})
 				}
-				$(this).css('background-color', color);
+				, 500);
 			});
-		}
+			}
 		});
 	});
 
