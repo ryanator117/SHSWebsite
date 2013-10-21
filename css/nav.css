@@ -24,6 +24,7 @@ nav a {
 	text-decoration:none;
 	text-align:center;
 	float:left;
+	background:url(../images/transparent.0.2.png);
 	background:rgba(0, 0, 0, 0.2);
 	transition:background 0.2s ease-in-out;
 }
@@ -31,6 +32,7 @@ nav a:first-of-type {
 	margin-left:0;
 }
 nav a:hover {
+	background:url(../images/transparent.0.8.png);
 	background:rgba(0, 0, 0, 0.8);
 	transition:background 0.2s ease-in-out;
 }
