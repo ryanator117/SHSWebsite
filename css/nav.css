@@ -34,3 +34,23 @@ nav a:hover {
 	background:rgba(0, 0, 0, 0.8);
 	transition:background 0.2s ease-in-out;
 }
+
+nav #search {
+	width:0;
+	height:22px;
+	padding:5px 0 5px 32px;
+	background:rgba(0, 0, 0, 0.2) url(../images/openSearchButtonLight.png) no-repeat 5px 5px;
+	border:none;
+	color:white;
+	transition:width .5s, background-color 0.2s;
+	outline:none;
+}
+nav #search:focus {
+	width:256px;
+	background-color:rgba(0, 0, 0, 0.8);
+	cursor:text !important;
+}
+nav #search:hover {
+	background-color:rgba(0, 0, 0, 0.8);
+	cursor:pointer;
+}
