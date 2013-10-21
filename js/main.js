@@ -3,6 +3,8 @@ $(document).ready(function () {
 	$(window).resize(function () {
 		size();
 	});
+	
+	$('#faculty').tablesorter({sortList: [[0,0], [1,0]]});
 });
 
 function size() {
