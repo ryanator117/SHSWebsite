@@ -3,9 +3,23 @@ $(document).ready(function () {
 	$(window).resize(function () {
 		size();
 	});
-	
-	console.log(Modernizr.touch);
 });
+
+$(function () {
+	$(document).easteregg({
+		sequence : [38, 38, 40, 40, 37, 39, 37, 39, 66, 65],
+		callback : function () {
+			$('*').each(function () {
+				var letters = '0123456789ABCDEF'.split('');
+				var color = '#';
+				for (var i = 0; i < 6; i++ ) {
+					color += letters[Math.round(Math.random() * 15)];
+				}
+				$(this).css('background-color', color);
+			});
+		}
+		});
+	});
 
 function size() {
 	$('section').css('height', $(window).height() - $('header').height() - $('nav').outerHeight() - $('footer').outerHeight());
