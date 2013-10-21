@@ -4,7 +4,7 @@ $(document).ready(function () {
 		size();
 	});
 	
-	console.log(Modernizr.mq('only all and (max-width: 400px)'));
+	console.log(Modernizr.touch);
 });
 
 function size() {
