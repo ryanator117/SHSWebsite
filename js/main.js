@@ -3,6 +3,8 @@ $(document).ready(function () {
 	$(window).resize(function () {
 		size();
 	});
+	
+	console.log(Modernizr.mq('only all and (max-width: 400px)'));
 });
 
 function size() {
