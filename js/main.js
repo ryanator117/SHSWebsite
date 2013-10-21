@@ -10,9 +10,18 @@ function size() {
 }
 
 //Calendar
-var currentDate = new Date();
-var currentYear = currentDate.getFullYear();
-var currentMonth = currentDate.getMonth();
-var currentDay = currentDate.getDate();
+var curDate = new Date();
+console.log(curDate);
+var curYear = curDate.getFullYear();
+var curMonth = curDate.getMonth();
+var curDay = curDate.getDate();
+var curHour = curDate.getHours();
+var curMin = curDate.getMinutes();
+var curPeroid = "";
 
-console.log(currentMonth + "" + currentDay + "" + currentYear);
+if (curHour > 12) {
+	curHour -= 12;
+	curPeroid = "PM"
+}else{
+	curPeroid = "AM"
+}
