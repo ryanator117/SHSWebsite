@@ -21,7 +21,7 @@ $(function () {
 					}
 					$(this).css('background-color', color);
 				});
-			}, 500);
+			}, 250);
 		}
 	});
 });
