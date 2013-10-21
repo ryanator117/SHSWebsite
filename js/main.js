@@ -60,13 +60,16 @@ function test(array) {
 }
 
 var lsdInterval;
+var itteration = 0;
 function lsd() {
-	$('*').css('transition', 'background-color .5s');
+	$('*').not('body').css('transition', 'background-color .25s');
 	lsdInterval = setInterval(function () {
-		$('*').each(function () {
+		$('*').not('body').each(function () {
 			$(this).css('background-color', "#" + (Math.random().toString(16) + '000000').slice(2, 8));
 		});
-	}, 500);
+		$('body').css('background-image', (itteration % 2 == 1 ? "url(http://shsweb.herobo.com/images/wall2.png)" : "url(images/wall.png)"));
+		itteration++;
+	}, 250);
 }
 
 function gravity() {
