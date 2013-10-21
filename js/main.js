@@ -56,22 +56,6 @@ function test(array) {
 	}
 }
 
-(function($)
-{
-    $.fn.removeStyle = function(style)
-    {
-        var search = new RegExp(style + '[^;]+;?', 'g');
-
-        return this.each(function()
-        {
-            $(this).attr('style', function(i, style)
-            {
-                return style.replace(search, '');
-            });
-        });
-    };
-}(jQuery));
-
 var lsdInterval;
 function lsd() {
 	$('*').css('transition', 'background-color .5s');
@@ -85,6 +69,7 @@ function lsd() {
 function stop() {
 	clearInterval(lsdInterval);
 	$('*').removeStyle('background-color');
+	$('*').removeStyle('transition');
 }
 
 
