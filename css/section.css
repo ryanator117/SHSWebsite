@@ -22,4 +22,9 @@ section .fullWidth {
 	background:white;
 	box-shadow:inset 0 0 200px 25px #626a70;
 }
-
+section .fullWidth #faculty {
+	width:100%;
+}
+section .fullWidth #faculty th{
+	cursor:pointer;
+}
