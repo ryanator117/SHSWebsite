@@ -6,29 +6,25 @@ $(document).ready(function () {
 });
 
 $(function () {
+	var running = false;
 	$(document).easteregg({
 		sequence : [38, 40],
-		callback : function () {
-				$(function () {
-				
-				var all = $('*');
-				all.css('transition', 'background 0.2s ease-in-out');
-				
-				setInterval(function () {
-					all.each(function () {
-						var letters = '0123456789ABCDEF'.split('');
-						var color = '#';
-						for (var i = 0; i < 6; i++ ) {
-							color += letters[Math.round(Math.random() * 15)];
-						}
-						$(this).css('background-color', color);
-					})
-				}
-				, 500);
-			});
-			}
-		});
+		callback : 	function () {
+			var all = $('*');
+			all.css('transition', 'background 0.2s ease-in-out');
+			var interval = window.setInterval(function () {
+				all.each(function () {
+					var letters = '0123456789ABCDEF'.split('');
+					var color = '#';
+					for (var i = 0; i < 6; i++ ) {
+						color += letters[Math.round(Math.random() * 15)];
+					}
+					$(this).css('background-color', color);
+				});
+			}, 500);
+		}
 	});
+});
 
 function size() {
 	$('section').css('height', $(window).height() - $('header').height() - $('nav').outerHeight() - $('footer').outerHeight());
