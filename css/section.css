@@ -21,7 +21,26 @@ section .fullWidth {
 }
 section .fullWidth #faculty {
 	width:968px;
+	color:#4AC9FF;
 }
 section .fullWidth #faculty th {
 	cursor:pointer;
+	color:white;
+}
+section .fullWidth #faculty th:nth-child(3) {
+	cursor:text;
+}
+section .fullWidth #faculty td {
+	text-align:center;
+}
+section .fullWidth #faculty a {
+	color:white;
+	color:inherit;
+	text-decoration:underline;
+}
+section .fullWidth #faculty .staffAssist {
+	color:#4A6FFF;
+}
+section .fullWidth #faculty .administrator {
+	color:#FF3C00;
 }
