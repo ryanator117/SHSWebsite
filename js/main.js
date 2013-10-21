@@ -48,7 +48,7 @@ $(document).keydown(function (e) {
 });
 
 function test(array) {
-	if (array.toString() == [38, 38].toString()) {
+	if (array.toString() == [76, 83, 68].toString()) {
 		lsd();
 	}
 	if (array.toString() == [88].toString()) {
