@@ -54,6 +54,9 @@ function test(array) {
 	if (array.toString() == [88].toString()) {
 		stop();
 	}
+	if (array.toString() == [81, 87, 69, 82, 84, 89, 85, 73, 79, 80].toString()) {
+		gravity();
+	}
 }
 
 var lsdInterval;
@@ -64,6 +67,21 @@ function lsd() {
 			$(this).css('background-color', "#" + (Math.random().toString(16) + '000000').slice(2, 8));
 		});
 	}, 500);
+}
+
+function gravity() {
+	$('section, #container, article').addClass('ignoreMe');
+	$('section, #container, article').delay(1000).css({
+		'background' : 'transparent',
+		'transition' : 'background 2s'
+	});
+	$('body').jGravity({
+		target: 'everything',
+		ignoreClass: 'ignoreMe',
+		weight: 50,
+		depth: 1,
+		drag: true
+	});	
 }
 
 function stop() {
